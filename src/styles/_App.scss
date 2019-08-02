@@ -1,0 +1,28 @@
+.app{
+   padding: 50px 0;
+}
+
+.header{
+    margin-bottom: 25px;
+    &__title{
+        font-family: 'Pattaya', sans-serif;
+        font-size: 50px;
+        font-weight: 400;
+    }
+
+    &__subtitle{
+
+        font-size: 25px;
+        color: var(--c-primary);
+    }
+}
+
+.charge-posts{
+    padding: 10px 20px;
+    margin-top: 25px;
+    background-color: var(--c-edit);
+    font-size: 1rem;
+    color: var(--c-light);
+    border: 0;
+    cursor: pointer;
+}

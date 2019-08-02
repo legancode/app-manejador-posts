@@ -1,0 +1,77 @@
+.table-container{
+    width: 100%;
+    // outline: 1px solid red;
+}
+
+.table-header{
+    display: grid;
+    grid-template-columns: 1fr 4fr 6fr 3fr;
+    grid-gap: 2px;
+    height: 35px;
+
+    & li{
+        background-color: var(--c-primary);
+        line-height: 35px;
+        text-align: center;
+        // outline: 1px solid red;
+    }
+}
+
+.table-content{
+    width: 100%;
+}
+
+.table-item{
+    display: grid;
+    grid-template-columns: 1fr 4fr 6fr 3fr;
+    grid-gap: 2px;
+    height: 35px;
+
+        & div{
+            background-color: var(--c-tertiary);
+            line-height: 35px;
+            height: 35px;
+        }
+
+        &:nth-child(2n) div{
+            background-color: var(--c-secondary);
+        }
+
+    &__id, &__title, &__message{
+        padding: 0 10px;
+    }
+    
+    &__id{
+       text-align: center;
+    }
+
+    &__title{
+        
+    }
+
+    &__message{
+       
+    }
+}
+
+.table-item__actions{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    & button{
+        cursor: pointer;
+        border: 0;
+        color: var(--c-light);
+        padding: 5px 15px;
+        font-size: 1rem;
+    }
+}
+
+.table-button-edit{
+    background-color: var(--c-edit);
+}
+
+.table-button-delete{
+    background-color: var(--c-delete);
+}
